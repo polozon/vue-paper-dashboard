@@ -2,9 +2,9 @@
   <div class="wrapper">
     <side-bar>
       <template slot="links">
-        <sidebar-link to="/dashboard" name="Dashboard" icon="ti-panel"/>
-        <sidebar-link to="/stats" name="User Profile" icon="ti-user"/>
-        <sidebar-link to="/table-list" name="Table List" icon="ti-view-list-alt"/>
+        <sidebar-link to="/dashboard" name="Overview" icon="ti-home"/>
+        <sidebar-link to="/stats" name="Actions" icon="ti-panel"/>
+        <sidebar-link to="/table-list" name="Error List" icon="ti-view-list-alt"/>
       </template>
       <mobile-menu>
         <li class="nav-item">

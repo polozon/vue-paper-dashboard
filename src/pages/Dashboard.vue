@@ -23,7 +23,7 @@
     <div class="row">
 
       <div class="col-12">
-        <chart-card title="Users behavior"
+        <chart-card title="Booklets produced"
                     sub-title="24 Hours performance"
                     :chart-data="usersChart.data"
                     :chart-options="usersChart.options">
@@ -39,31 +39,31 @@
       </div>
 
       <div class="col-md-6 col-12">
-        <chart-card title="Email Statistics"
-                    sub-title="Last campaign performance"
+        <chart-card title="Run Statistics"
+                    sub-title="Last month"
                     :chart-data="preferencesChart.data"
                     chart-type="Pie">
           <span slot="footer">
             <i class="ti-timer"></i> Campaign set 2 days ago</span>
           <div slot="legend">
-            <i class="fa fa-circle text-info"></i> Open
-            <i class="fa fa-circle text-danger"></i> Bounce
-            <i class="fa fa-circle text-warning"></i> Unsubscribe
+            <i class="fa fa-circle text-success"></i> OK
+            <i class="fa fa-circle text-danger"></i> Errors
+            <i class="fa fa-circle text-warning"></i> Interrupted
           </div>
         </chart-card>
       </div>
 
       <div class="col-md-6 col-12">
-        <chart-card title="2015 Sales"
-                    sub-title="All products including Taxes"
+        <chart-card title="Booklets Produced"
+                    sub-title="Most used paper sizes"
                     :chart-data="activityChart.data"
                     :chart-options="activityChart.options">
           <span slot="footer">
             <i class="ti-check"></i> Data information certified
           </span>
           <div slot="legend">
-            <i class="fa fa-circle text-info"></i> Tesla Model S
-            <i class="fa fa-circle text-warning"></i> BMW 5 Series
+            <i class="fa fa-circle text-info"></i> A4LEF
+            <i class="fa fa-circle text-warning"></i> SRA3
           </div>
         </chart-card>
       </div>

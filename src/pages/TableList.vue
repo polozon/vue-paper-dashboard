@@ -3,64 +3,52 @@
       <div class="col-12">
         <card :title="table1.title" :subTitle="table1.subTitle">
           <div slot="raw-content" class="table-responsive">
-            <paper-table :data="table1.data" :columns="table1.columns">
+            <paper-table type="hover" :data="table1.data" :columns="table1.columns">
 
             </paper-table>
           </div>
         </card>
       </div>
-
-      <div class="col-12">
-        <card class="card-plain">
-          <div class="table-full-width table-responsive">
-            <paper-table type="hover" :title="table2.title" :sub-title="table2.subTitle" :data="table2.data"
-                         :columns="table2.columns">
-
-            </paper-table>
-          </div>
-        </card>
-      </div>
-
     </div>
 </template>
 <script>
 import { PaperTable } from "@/components";
-const tableColumns = ["Id", "Name", "Salary", "Country", "City"];
+const tableColumns = ["Id", "Time", "Type", "Position", "Cause"];
 const tableData = [
   {
     id: 1,
-    name: "Dakota Rice",
-    salary: "$36.738",
-    country: "Niger",
-    city: "Oud-Turnhout"
+    time: "2020-02-01 13:35",
+    type: "PaperJam",
+    position: "Q125",
+    cause: "Late to sensor"
   },
   {
     id: 2,
-    name: "Minerva Hooper",
-    salary: "$23,789",
-    country: "Curaçao",
-    city: "Sinaai-Waas"
+    time: "2020-03-12 10:42",
+    type: "StrawberryJam",
+    position: "Q153",
+    cause: "Late to sensor"
   },
   {
     id: 3,
-    name: "Sage Rodriguez",
-    salary: "$56,142",
-    country: "Netherlands",
-    city: "Baileux"
+    time: "2020-05-02 12:63",
+    type: "PaperStuck",
+    position: "Q232, Q101",
+    cause: "Jam over sensor"
   },
   {
     id: 4,
-    name: "Philip Chaney",
-    salary: "$38,735",
-    country: "Korea, South",
-    city: "Overland Park"
+    time: "2020-06-10 15:15",
+    type: "PaperJam",
+    position: "Q106",
+    cause: "Late to sensor"
   },
   {
     id: 5,
-    name: "Doris Greene",
-    salary: "$63,542",
-    country: "Malawi",
-    city: "Feldkirchen in Kärnten"
+    time: "2020-06-11 09:30",
+    type: "Jamz",
+    position: "Q171",
+    cause: "Jam over sensor"
   }
 ];
 
@@ -71,8 +59,8 @@ export default {
   data() {
     return {
       table1: {
-        title: "Stripped Table",
-        subTitle: "Here is a subtitle for this table",
+        title: "Error Table",
+        subTitle: "Reported errors in system:",
         columns: [...tableColumns],
         data: [...tableData]
       },
