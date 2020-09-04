@@ -87,20 +87,28 @@ export default {
     return {
       statsCards: [
         {
-          type: "warning",
-          icon: "ti-server",
-          title: "Capacity",
-          value: "105GB",
+          type: "success",
+          icon: "ti-control-forward",
+          title: "Runs",
+          value: "162",
           footerText: "Updated now",
           footerIcon: "ti-reload"
         },
         {
-          type: "success",
-          icon: "ti-wallet",
-          title: "Revenue",
-          value: "$1,345",
+          type: "warning",
+          icon: "ti-book",
+          title: "Books",
+          value: "4506",
           footerText: "Last day",
           footerIcon: "ti-calendar"
+        },
+        {
+          type: "info",
+          icon: "ti-timer",
+          title: "Runtime",
+          value: "263h 10m",
+          footerText: "Updated now",
+          footerIcon: "ti-reload"
         },
         {
           type: "danger",
@@ -109,14 +117,6 @@ export default {
           value: "23",
           footerText: "In the last hour",
           footerIcon: "ti-timer"
-        },
-        {
-          type: "info",
-          icon: "ti-twitter-alt",
-          title: "Followers",
-          value: "+45",
-          footerText: "Updated now",
-          footerIcon: "ti-reload"
         }
       ],
       usersChart: {
