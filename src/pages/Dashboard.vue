@@ -106,7 +106,7 @@ export default {
           type: "info",
           icon: "ti-timer",
           title: "Runtime",
-          value: "263h 10m",
+          value: "263h",
           footerText: "Updated now",
           footerIcon: "ti-reload"
         },
