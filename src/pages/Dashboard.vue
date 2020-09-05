@@ -80,6 +80,9 @@ export default {
     StatsCard,
     ChartCard
   },
+  mounted () {
+    this.getPosts()
+  },
   /**
    * Chart data used to render stats, charts. Should be replaced with server data
    */
@@ -189,6 +192,13 @@ export default {
         options: {}
       }
     };
+  },
+  methods: {
+    getPosts () {
+      this.$http.get('https://jsonplaceholder.typicode.com/posts').then((response) => {
+        console.log(response.data)
+      })
+    }
   }
 };
 </script>

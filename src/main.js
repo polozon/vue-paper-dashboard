@@ -16,11 +16,14 @@
 import Vue from "vue";
 import App from "./App";
 import router from "./router/index";
+import axios from 'axios'
+import VueAxios from 'vue-axios'
 
 import PaperDashboard from "./plugins/paperDashboard";
 import "vue-notifyjs/themes/default.css";
 
 Vue.use(PaperDashboard);
+Vue.use(VueAxios, axios)
 
 /* eslint-disable no-new */
 new Vue({
