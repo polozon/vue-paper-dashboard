@@ -198,6 +198,10 @@ export default {
     getPosts () {
       this.$http.get(this.url).then((response) => {
         console.log(response.data)
+        this.statsCards[0].value = response.data.runs
+        this.statsCards[1].value = response.data.books
+        this.statsCards[2].value = response.data.runtime
+        this.statsCards[3].value = response.data.errors
       })
     }
   }
