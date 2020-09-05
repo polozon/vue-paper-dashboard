@@ -88,6 +88,7 @@ export default {
    */
   data() {
     return {
+      url: 'https://my-json-server.typicode.com/polozon/vue-paper-dashboard/summary',
       statsCards: [
         {
           type: "success",
@@ -195,7 +196,7 @@ export default {
   },
   methods: {
     getPosts () {
-      this.$http.get('https://jsonplaceholder.typicode.com/posts').then((response) => {
+      this.$http.get(this.url).then((response) => {
         console.log(response.data)
       })
     }
