@@ -1,4 +1,10 @@
 {
+    "summary": {
+        "runs": 124,
+        "books": 4653,
+        "runtime": 8485,
+        "errors": 47
+    },
     "posts": [
       {
         "id": 1,
@@ -8,4 +14,4 @@
     "profile": {
       "name": "typicode"
     }
-  }
+}
