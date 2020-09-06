@@ -88,7 +88,8 @@ export default {
    */
   data() {
     return {
-      url: 'https://my-json-server.typicode.com/polozon/vue-paper-dashboard/summary',
+      //url: 'https://my-json-server.typicode.com/polozon/vue-paper-dashboard/summary',
+      url: 'https://r5zito2gk5.execute-api.eu-central-1.amazonaws.com/v1?unit=1973',
       statsCards: [
         {
           type: "success",
@@ -198,10 +199,11 @@ export default {
     getPosts () {
       this.$http.get(this.url).then((response) => {
         console.log(response.data)
-        this.statsCards[0].value = response.data.runs
-        this.statsCards[1].value = response.data.books
-        this.statsCards[2].value = response.data.runtime
-        this.statsCards[3].value = response.data.errors
+        let d = response.data.body;
+        this.statsCards[0].value = d.runs
+        this.statsCards[1].value = d.books
+        this.statsCards[2].value = d.runtime
+        this.statsCards[3].value = d.errors
       })
     }
   }
