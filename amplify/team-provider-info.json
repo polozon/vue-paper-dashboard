@@ -1,0 +1,23 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-plintdashboard-dev-150554-authRole",
+            "UnauthRoleArn": "arn:aws:iam::674626192950:role/amplify-plintdashboard-dev-150554-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::674626192950:role/amplify-plintdashboard-dev-150554-authRole",
+            "Region": "eu-central-1",
+            "DeploymentBucketName": "amplify-plintdashboard-dev-150554-deployment",
+            "UnauthRoleName": "amplify-plintdashboard-dev-150554-unauthRole",
+            "StackName": "amplify-plintdashboard-dev-150554",
+            "StackId": "arn:aws:cloudformation:eu-central-1:674626192950:stack/amplify-plintdashboard-dev-150554/5e5c5ba0-eeaf-11ea-bc49-02e73a7a023c",
+            "AmplifyAppId": "d1tg1fx5bxobsg"
+        },
+        "categories": {
+            "hosting": {
+                "amplifyhosting": {
+                    "appId": "d1tg1fx5bxobsg",
+                    "type": "manual"
+                }
+            }
+        }
+    }
+}

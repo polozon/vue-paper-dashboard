@@ -199,7 +199,7 @@ export default {
     getPosts () {
       this.$http.get(this.url).then((response) => {
         console.log(response.data)
-        let d = response.data.body;
+        let d = JSON.parse(response.data.body);
         this.statsCards[0].value = d.runs
         this.statsCards[1].value = d.books
         this.statsCards[2].value = d.runtime
